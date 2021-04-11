@@ -1,9 +1,17 @@
 /* add css module styles here (optional) */
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+.btn {
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  box-shadow: none;
+  border-style: none;
+}
+
+.btn--primary-color {
+  background-color: rgb(21, 128, 0);
+}
+
+.btn--secondary-color {
+  background-color: rgb(0, 104, 145);
 }

@@ -7,12 +7,12 @@ export enum CardTypes {
   flat = 'card--flat',
 }
 
-interface BaseProps {
-  children: React.Component | null;
+export interface BaseProps {
+  children: any;
   className: string;
 }
 
-interface CardProps extends BaseProps {
+export interface Props extends BaseProps {
   type: CardTypes;
 }
 
@@ -38,6 +38,6 @@ export function CardSection({ children = null, className = '', ...props }: BaseP
   );
 }
 
-export default function Card({ children = null, className= '', type = CardTypes.none, ...props }: CardProps) {
+export default function Card({ children = null, className= '', type = CardTypes.none, ...props }: Props) {
   return <div className={classnames('card', className, type)} {...props}>{children}</div>;
 }
