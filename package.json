@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "@components-ui/button": "file:packages/button",
-    "@components-ui/card": "file:packages/Card"
+    "@components-ui/card": "file:packages/card"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
