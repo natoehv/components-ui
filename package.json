@@ -51,7 +51,9 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "lerna run test",
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "lerna:release": "lerna version --conventional-commits --conventional-graduate",
+    "lerna:prerelease": "lerna version prerelease --preid $(git branch | grep '*' | cut -d ' ' -f2 | sed -e 's:[_-]*[/]*::g')"
   },
   "eslintConfig": {
     "overrides": [
