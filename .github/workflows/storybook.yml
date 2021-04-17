@@ -9,7 +9,7 @@ jobs:
 
       - name: Install and Build 🔧 
         run: |
-          yarn install
+          yarn install --frozen-lockfile
           yarn build-storybook
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.0.0
