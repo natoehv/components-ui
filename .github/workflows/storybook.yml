@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Storybook
 on: push
 jobs:
   build-and-deploy:
@@ -15,4 +15,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
           branch: gh-pages # The branch the action should deploy to.
-          folder: build # The folder the action should deploy.
+          folder: storybook-static # The folder the action should deploy.
