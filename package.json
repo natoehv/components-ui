@@ -49,7 +49,8 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test": "lerna run test"
   },
   "eslintConfig": {
     "overrides": [
@@ -62,5 +63,8 @@
         }
       }
     ]
+  },
+  "resolutions": {
+    "babel-loader": "8.1.0"
   }
 }
